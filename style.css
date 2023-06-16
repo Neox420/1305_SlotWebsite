@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: red;
+  color: #333;
+  text-align: center;
+  background-image: radial-gradient(circle, #ffcc00, #ff6600);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, p, label, #balance {
+  color: #333;
+  text-shadow: 2px 2px 4px #777;
+}
+
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.reel-container {
+  width: 300px;
+  overflow: hidden;
+}
+
+.reel {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.symbol {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.5s ease-out;
+}
+
+.reel1 span {
+  --ch: -5;
+  animation: scroll 1s 1s linear forwards;
+}
+
+.reel2 span {
+  --ch: -20;
+  animation: scroll 3s 1s linear forwards;
+}
+
+.reel3 span {
+  --ch: -13;
+  animation: scroll 2s 1s linear forwards;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateY(calc(var(--ch) * 100%));
+  }
+}
+
+.glow {
+  animation: glow 1s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ffcc00, 0 0 20px #ffcc00;
+  }
+  100% {
+    box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00;
+  }
+}
+
+button {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #009933;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #00cc44;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 24px;
+  padding: 20px;
+  background-color: #009933;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #00cc44;
+}
+
+table,
+th,
+td {
+  border: 2px solid #333;
+  border-collapse: collapse;
+  color: #333;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.slot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.slot-image {
+  position: relative;
+}
+
+.image {
+  width: 535px;
+  height: 535px;
+}
+
+.btn {
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.contact-info {
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+}

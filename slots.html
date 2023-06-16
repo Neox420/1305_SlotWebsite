@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="poker.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas Royale Casino - Slot Machines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Online Slot Machines</h1>
+    <div class="slot-machine">
+        <div class="reel-container">
+            <div class="reel">
+                <div class="reel1">
+                    <img src="symbol7.png" alt="Symbol" class="symbol">
+                </div>
+                <div class="reel2">
+                    <img src="symbol7.png" alt="Symbol" class="symbol">
+                </div>
+                <div class="reel3">
+                    <img src="symbol7.png" alt="Symbol" class="symbol">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>
+        <label for="betAmount">Bet Amount: </label>
+        <input type="number" id="betAmount" value="1" min="1" max="100">
+    </p>
+	
+	<p id="spinText" style="display: none;">Spinning...</p>
+
+    <button id="spinButton">Spin</button>
+    <div id="balance" style="margin-top: 10px;">Balance: $<span id="balanceAmount">1000</span></div>
+    <p id="resultMessage"></p>
+	<audio id="wheel_sound">
+        <source src="slot-machine-wheel.mp3" >
+    </audio>
+	<audio id="jackpot_sound">
+        <source src="slot-machine-win.mp3" >
+    </audio>
+    <h2>Payouts</h2>
+    <table>
+		<tbody>
+			<tr>
+				<td><img src="symbol7.png" width="40" height="40" /></td>
+				<td><img src="symbol7.png" width="40" height="40" /></td>
+				<td><img src="symbol7.png" width="40" height="40" /></td>
+                <td>300x</td>
+			</tr>
+			<tr>
+				<td><img src="symbol6.png" width="40" height="40" /></td>
+				<td><img src="symbol6.png" width="40" height="40" /></td>
+				<td><img src="symbol6.png" width="40" height="40" /></td>
+                <td>250x</td>
+			</tr>
+			<tr>
+				<td><img src="symbol5.png" width="40" height="40" /></td>
+				<td><img src="symbol5.png" width="40" height="40" /></td>
+				<td><img src="symbol5.png" width="40" height="40" /></td>
+                <td>100x</td>
+			</tr>
+			<tr>
+				<td><img src="symbol4.png" width="40" height="40" /></td>
+				<td><img src="symbol4.png" width="40" height="40" /></td>
+				<td><img src="symbol4.png" width="40" height="40" /></td>
+                <td>50x</td>
+			</tr>
+			<tr>
+				<td><img src="symbol3.png" width="40" height="40" /></td>
+				<td><img src="symbol3.png" width="40" height="40" /></td>
+				<td><img src="symbol3.png" width="40" height="40" /></td>
+                <td>15x</td>
+			</tr>
+			<tr>
+				<td><img src="symbol2.png" width="40" height="40" /></td>
+				<td><img src="symbol2.png" width="40" height="40" /></td>
+				<td><img src="symbol2.png" width="40" height="40" /></td>
+                <td>10x</td>
+			</tr>
+			<tr>
+				<td><img src="symbol1.png" width="40" height="40" /></td>
+				<td><img src="symbol1.png" width="40" height="40" /></td>
+				<td><img src="symbol1.png" width="40" height="40" /></td>
+                <td>5x</td>
+			</tr>
+			<tr>
+				<td><img src="symbol0.png" width="40" height="40" /></td>
+				<td><img src="symbol0.png" width="40" height="40" /></td>
+				<td><img src="symbol0.png" width="40" height="40" /></td>
+                <td>3x</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	
+    <script src="script.js"></script>
+</body>
+</html>
